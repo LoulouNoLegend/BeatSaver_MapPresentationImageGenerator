@@ -1,0 +1,82 @@
+{
+    "id": "25f",
+    "name": "DM DOKURO - Reality Check Through The Skull",
+    "description": "(Expert+++ Only) (Epilepsy Warning: Lightning events have rapid flashes)\r\n\r\nReality Check Through The Skull - A Megalovania remix by DM DOKURO. Original song from the game Undertale.\r\n\r\nThis level is very difficult. Contains frequent ducking obstacles in some parts. You feel like you're going to have a bad time.",
+    "uploader": {
+        "id": 52609,
+        "name": "rickput",
+        "hash": "5cff0b7298cc5a672c84e8d3",
+        "avatar": "https://www.gravatar.com/avatar/5cff0b7298cc5a672c84e8d3?d=retro",
+        "type": "SIMPLE",
+        "admin": false,
+        "curator": false,
+        "verifiedMapper": true,
+        "playlistUrl": "https://api.beatsaver.com/users/id/52609/playlist"
+    },
+    "metadata": {
+        "bpm": 260.0,
+        "duration": 334,
+        "songName": "Reality Check Through The Skull",
+        "songSubName": "Mapped by Rickput",
+        "songAuthorName": "DM DOKURO",
+        "levelAuthorName": "rickput"
+    },
+    "stats": {
+        "plays": 0,
+        "downloads": 0,
+        "upvotes": 10930,
+        "downvotes": 871,
+        "score": 0.9244,
+        "reviews": 53,
+        "sentiment": "VERY_POSITIVE"
+    },
+    "uploaded": "2018-05-26T22:49:59Z",
+    "automapper": false,
+    "ranked": false,
+    "qualified": false,
+    "versions": [
+        {
+            "hash": "ad6c9f88d63259a95e39397c31be2981c4beb744",
+            "key": "25f",
+            "state": "Published",
+            "createdAt": "2018-05-26T22:49:59Z",
+            "sageScore": 6,
+            "diffs": [
+                {
+                    "njs": 17.0,
+                    "offset": 0.0,
+                    "notes": 1517,
+                    "bombs": 382,
+                    "obstacles": 58,
+                    "nps": 4.948,
+                    "length": 1328.5,
+                    "characteristic": "Standard",
+                    "difficulty": "ExpertPlus",
+                    "events": 2003,
+                    "chroma": false,
+                    "me": false,
+                    "ne": false,
+                    "cinema": false,
+                    "seconds": 306.577,
+                    "paritySummary": {
+                        "errors": 113,
+                        "warns": 139,
+                        "resets": 6
+                    },
+                    "maxScore": 1388395
+                }
+            ],
+            "downloadURL": "https://r2cdn.beatsaver.com/ad6c9f88d63259a95e39397c31be2981c4beb744.zip",
+            "coverURL": "https://na.cdn.beatsaver.com/ad6c9f88d63259a95e39397c31be2981c4beb744.jpg",
+            "previewURL": "https://na.cdn.beatsaver.com/ad6c9f88d63259a95e39397c31be2981c4beb744.mp3"
+        }
+    ],
+    "createdAt": "2018-05-26T22:49:59Z",
+    "updatedAt": "2018-05-26T22:49:59Z",
+    "lastPublishedAt": "2018-05-26T22:49:59Z",
+    "tags": [
+        "electronic"
+    ],
+    "bookmarked": false,
+    "declaredAi": "None"
+}
