@@ -1,3 +1,14 @@
+:root {
+    --Blurple: #5865F2;
+    --Faded-Blurple: #7289da;
+    --Grayple: #99AAb5;
+    --Darky: #1e2124;
+    --ItsBlack: #23272A;
+    --Boxes: #36393e;
+    --LessDarky: #282b30;
+    --VeryDark: #23272A;
+}
+
 /* Separated from main body, just because I want the font to be in it's own place */
 body {
     font-family: 'Teko';
@@ -15,21 +26,28 @@ body {
 }
 
 .container {
+    background-image: repeating-radial-gradient(var(--Darky), var(--VeryDark), var(--ItsBlack));
     display: flex;
+    background-color: var(--Darky);
     justify-content: space-between;
     align-items: center;
     text-align: start;
     width: 100%;
     height: 100%;
-    background-color: black;
     color: white;
     border-radius: 20px;
+    border-style: groove;
+    border-color: black;
 }
 
 img {
     width: 400px;
     margin: 35px;
     border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 10px var(--Darky);
+  /* x offset, y offset, blur size, spread size, color */
+  /* blur size and spread size are optional (default is 0) */
 }
 
 .mapname {

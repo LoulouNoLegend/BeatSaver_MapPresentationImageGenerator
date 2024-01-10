@@ -46,7 +46,7 @@ bs_mapduration = data['metadata']['duration']
 bs_coverURL = data['versions'][0]['coverURL']
 bs_uploader = data['uploader']
 bs_uploaded = data['uploaded']
-bs_tags = data['tags']
+#bs_tags = data['tags']
 
 # Ranking info
 bs_ranked = data['ranked']
@@ -66,6 +66,14 @@ bs_lastPublishedAt = data['lastPublishedAt']
 bs_uploader_id = data['uploader']['id']
 bs_uploader_name = data['uploader']['name']
 bs_metadata_bpm = data['metadata']['bpm']
+
+# # Read the HTML file
+# with open('mapimage.html', 'r') as file:
+#     html_content = file.read()
+
+# # Write the content to a new file
+# with open('results/generated_page.html', 'w') as file:
+#     file.write(html_content)
 
 # The whole html it's gonna write (using mapimage.css)!
 with open('results/generated_page.html', 'w') as f:
@@ -101,8 +109,8 @@ with open('results/generated_page.html', 'w') as f:
     </div>
 </body>
 
-</html>
-              """)
+  </html>
+               """)
 print('HTML file saved here: results/generated_page.html! \n')
 
 with open('results/generated_page.html', 'r') as f:
@@ -118,6 +126,6 @@ hti.screenshot(html_str=html, css_str=css, save_as='generated_image.png')
 # Move the generated image to the results folder using shutil, because I can't do it with html 2 image (yeah I'm bad)
 shutil.move('generated_image.png', 'results/generated_image.png')
 
-print('HTML converted to png and saved here: results/generated_image.png!')
+#print('HTML converted to png and saved here: results/generated_image.png!')
 
 # Wonderfull! Now you are left with your picture, your html for the picture and the json.
