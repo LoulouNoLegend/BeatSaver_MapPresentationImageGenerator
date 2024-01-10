@@ -1,6 +1,7 @@
 import requests
 import json
 import shutil
+import os
 from html2image import Html2Image
 hti = Html2Image()
 
@@ -8,15 +9,26 @@ mapID = input("Enter the map ID: ")
 
 base_url = "https://beatsaver.com/api"
 
+path = "results"
+
 # Ask the beat saver api for the infos of a map based on the id given
 response = requests.get(f'{base_url}/maps/id/{mapID}')
+
+# Check whether the specified path exists or not
+isExist = os.path.exists(path)
+#printing if the path exists or not
+if not isExist:
+
+   # Create a new directory because it does not exist
+   os.makedirs(path)
+   print("\nThe directory 'results' was created.\n")
 
 # If the api response is 200 (OK), then write the whole map infos to data.json. Else, print an error with the code.
 if response.status_code == 200:
     data = response.json()
     with open('results/generated_data.json', 'w') as f:
         json.dump(data, f, indent=4)
-    print('\nMap informations saved here: results/generated_data.json! \n')
+    print('Map informations saved here: results/generated_data.json!\n')
 else:
     print('Request Error', response.status_code)
 
