@@ -1,9 +1,8 @@
 import requests
 import json
-import shutil
 import os
 from html2image import Html2Image
-hti = Html2Image()
+hti = Html2Image(size=(1087, 507), output_path='results')
 
 mapID = input("Enter the map ID: ")
 
@@ -79,12 +78,7 @@ bs_metadata_bpm = data['metadata']['bpm']
 with open('results/generated_page.html', 'w') as f:
     f.write(f"""
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generated Image</title>
-
     <link rel="stylesheet" href="mapimage.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko">
 </head>
@@ -109,7 +103,7 @@ with open('results/generated_page.html', 'w') as f:
     </div>
 </body>
 
-  </html>
+</html>
                """)
 print('HTML file saved here: results/generated_page.html! \n')
 
@@ -122,9 +116,6 @@ with open('mapimage.css', 'r') as f:
 print('Converting HTML to PNG... \n')
 # Screenshot an HTML (CSS is optional)
 hti.screenshot(html_str=html, css_str=css, save_as='generated_image.png')
-
-# Move the generated image to the results folder using shutil, because I can't do it with html 2 image (yeah I'm bad)
-shutil.move('generated_image.png', 'results/generated_image.png')
 
 #print('HTML converted to png and saved here: results/generated_image.png!')
 
