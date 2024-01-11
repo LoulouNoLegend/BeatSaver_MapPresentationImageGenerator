@@ -1,0 +1,7 @@
+To compile everything into a .exe by yourself, install pyinstaller with 'pip install pyinstaller'
+
+
+After that, enter this command in the terminal:
+pyinstaller -F --icon=app_icon.ico main.py
+
+You can take the .exe from the dist folder and place it inside the root folder of the project, then launch it. It needs to have at least the file 'mapimage.css' around.
