@@ -1,0 +1,2 @@
+# Beat Saver Map Presentation Image Generator
+BSMPIG is a simple program that, with the ID of a custom Beat Saber map from [Beat Saver](https://beatsaver.com), will create a picture with the informations of the map.
