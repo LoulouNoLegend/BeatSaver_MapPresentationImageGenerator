@@ -4,11 +4,9 @@ mapimage.html
 dist/
 build/
 main.spec
-main.exe
 app_icon.psd
 BS_MPIG.exe
 _PUBLISHED BUILDS/
-file.spec
-main copy.spec
 how_to_build.txt
 htb.txt
+version.txt
