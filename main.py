@@ -19,9 +19,9 @@ response = requests.get(f'{base_url}/maps/id/{choosedID}')
 
 # Check whether the specified path exists or not
 isExist = os.path.exists(path)
+
 #printing if the path exists or not
 if not isExist:
-
    # Create a new directory because it does not exist
    os.makedirs(path)
    print("\nFolder 'results' created.\n")
@@ -33,7 +33,8 @@ if response.status_code == 200:
         json.dump(data, f, indent=4)
     print('\nMap informations saved!')
 else:
-    print('Request Error', response.status_code)
+    print('Request Error', response.status_code, '. Please retry.')
+    exit()
 
 print('\nPreparing the HTML file... \n')
 with open('results/generated_data.json', 'r') as f:
